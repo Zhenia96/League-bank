@@ -1,0 +1,39 @@
+@import '../../css/variables.scss';
+
+.logo {
+  text-decoration: none;
+  font-family: $workSansFont;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(31, 30, 37, 1);
+
+  @media (max-width: $tabletWidth) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.logo__icon {
+  width: 28px;
+  height: 25px;
+  margin-right: 9px;
+
+  @media (max-width: $tabletWidth) {
+    width: 24px;
+    height: 22px;
+    margin-right: 8px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 18px;
+    height: 17px;
+  }
+}
+
+
