@@ -1,0 +1,233 @@
+@import '../../css/variables.scss';
+@import '../../css/mixins.scss';
+
+.main-header {
+  position: relative;
+  min-height: 91px;
+  background-color: rgba(246, 247, 255, 1);
+  padding: 27px 0 10px;
+  box-sizing: border-box;
+
+  @media (max-width: $tabletWidth) {
+    min-height: 69px;
+    padding-top: 19px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    padding: 10px 0 5px;
+    min-height: 48px;
+  }
+
+  &--opened {
+    display: fixed;
+    min-height: 100vh;
+  }
+}
+.main-header__navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.main-header--opened .main-header__navigation {
+  flex-direction: column;
+}
+
+.main-header__logo {
+  min-width: 150px;
+
+  @media (max-width: $tabletWidth) {
+    min-width: 135px;
+    transform: translateY(3px);
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin-left: 29px;
+  }
+}
+
+.main-header__main-menu {
+  @include resetList;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 10px;
+  margin-left: 9.45%;
+
+  @media (max-width: $tabletWidth) {
+    column-gap: 20px;
+    margin-left: 10%;
+  }
+
+  @media (max-width: $mobileWidth) {
+    display: none;
+    flex-direction: column;
+    gap: none;
+  }
+}
+
+.main-header--opened .main-header__main-menu  {
+  display: flex;
+  align-self: stretch;
+  gap: 0;
+  margin: 50px 0 0;
+}
+
+.main-header__main-menu-item {
+  font-family: $robotoFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(31, 30, 37, 1);
+
+  @media (max-width: $tabletWidth) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.main-header--opened .main-header__main-menu-item,
+.main-header--opened .main-header__user-menu-item  {
+  min-height: 60px;
+  border-bottom: 1px solid rgba(193, 194, 202, 1);
+  box-sizing: border-box;
+
+  &:first-child {
+    border-top: 1px solid rgba(193, 194, 202, 1);
+  }
+}
+
+.main-header--opened .main-header__main-menu-link {
+  padding: 21px 15px 10px;
+}
+
+.main-header__user-menu {
+  @include resetList;
+
+  margin-left:  auto;
+
+  @media (min-width: $desktopWidth) {
+    min-width: 205px;
+  }
+}
+
+.main-header--opened .main-header__user-menu {
+  align-self: stretch;
+  margin: -1px 0 0;
+}
+
+.main-header__user-login {
+  position: relative;
+  font-family: $robotoFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.main-header--opened .main-header__user-login {
+  padding: 15px 15px 10px;
+}
+
+.main-header__user-login-icon {
+   transform: translateY(4px);
+
+
+  @media (max-width: $mobileWidth) {
+    width: 14px;
+    height: 16px;
+  }
+}
+
+.main-header--opened .main-header__user-login-icon {
+  width: 20px;
+  height: 22px;
+}
+
+.main-header__user-login-text {
+  margin-left: 10px;
+
+  @media (max-width: $tabletWidth) {
+    display: none;
+  }
+}
+
+.main-header--opened .main-header__user-login-text {
+  display: inline;
+}
+
+
+.main-header__open-menu-button,
+.main-header__close-menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+.main-header__open-menu-button {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 16px;
+  height: 12px;
+  border: none;
+  border-top: 2px solid rgba(31, 30, 37, 1);
+  border-bottom: 2px solid rgba(31, 30, 37, 1);
+  background-color: rgba(255, 255, 255, 1);
+
+  &::after {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: rgba(31, 30, 37, 1);
+  }
+
+  @media (max-width: $mobileWidth) {
+    display: block;
+  }
+}
+
+.main-header__close-menu-button {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+  width: 13px;
+  height: 13px;
+  padding: 3px;
+
+  &::after,
+  &::before {
+     position: absolute;
+     top: 0;
+     content: '';
+     width: 2px;
+     height: 17px;
+     border-radius: 1px;
+     background-color: rgba(31, 30, 37, 1);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-header--opened > .main-header__close-menu-button {
+  display: block;
+}
+
+.main-header--opened > .main-header__close-menu-button {
+  display: block;
+}

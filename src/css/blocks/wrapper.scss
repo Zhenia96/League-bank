@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.wrapper {
+  margin: 0 clamp(20px, calc((100vw - 1024px) / 2), 98px);
+
+  @media (max-width: $tabletWidth) {
+    margin: 0 45px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin: 0 15px;
+  }
+}
