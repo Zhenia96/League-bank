@@ -6,14 +6,14 @@ import './main-header.scss';
 const OPENED_MENU_CLASS = 'main-header--opened';
 
 const MainHeader = () => {
-  const [isMenuOpened, setIsMenuOpend] = useState(false);
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   const handleOpenMenuButtonClick = () => {
-    setIsMenuOpend((prev) => !prev);
+    setIsMenuOpened((prev) => !prev);
   };
 
   const handleCloseMenuButtonClick = () => {
-    setIsMenuOpend((prev) => !prev);
+    setIsMenuOpened((prev) => !prev);
   };
 
   return (
