@@ -19,6 +19,7 @@ module.exports = {
   rules: {
     'jsx-quotes': ['error', 'prefer-single'],
     'no-param-reassign': ['error', { props: false }],
+    'react/jsx-props-no-spreading': ['off'],
     'jsx-a11y/no-static-element-interactions': ['off'],
     'jsx-a11y/no-autofocus': ['off'],
     'jsx-a11y/label-has-associated-control': ['off'],
