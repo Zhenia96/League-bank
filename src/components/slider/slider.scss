@@ -1,0 +1,28 @@
+@import '../../css/variables.scss';
+
+.slick-dots {
+  bottom: 35px;
+
+  @media (max-width: $tabletWidth) {
+    bottom: 11px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    bottom: 7px;
+  }
+}
+
+.slick-dots li {
+  width: 8px;
+  height: 8px;
+
+  @media (max-width: $mobileWidth) {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+.slick-active .dot  {
+  background-color: rgba(246, 247, 255, 1);
+}
+
