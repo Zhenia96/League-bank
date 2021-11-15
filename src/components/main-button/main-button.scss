@@ -1,0 +1,18 @@
+@import '../../css/variables.scss';
+
+.main-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: $robotoFont;
+  font-weight: 500;
+  color: rgba(246, 247, 255, 1);
+  text-decoration: none;
+
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color:rgba(44, 54, 242, 1);
+  box-sizing: border-box;
+}
