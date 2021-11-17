@@ -1,0 +1,9 @@
+@import '../../css/variables.scss';
+
+.services {
+
+  @media (min-width: $desktopWidth) {
+    margin: $desktopWindowIndent;
+    margin-top: 60px;
+  }
+}

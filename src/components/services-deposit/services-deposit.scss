@@ -1,0 +1,24 @@
+@import '../../css/variables.scss';
+
+.services-deposit {
+
+  @media (min-width: $desktopWidth) {
+    background-image: url('../../img/services/piggybank-desktop.jpg');
+  }
+
+  @media (max-width: $tabletWidth) {
+    background-image: url('../../img/services/piggybank-tablet.jpg');
+  }
+
+  @media (max-width: $mobileWidth) {
+    background-image: url('../../img/services/piggybank-mobile.jpg');
+  }
+}
+
+.services-deposit__list-item {
+  padding-right: 111px;
+
+  @media (max-width: $mobileWidth) {
+    padding-right: 27px;
+  }
+}

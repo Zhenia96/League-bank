@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../logo/logo';
-import loginIcon from '../../img/incons/login.svg';
+import loginIcon from '../../img/icons/login.svg';
 import './main-header.scss';
 
 const OPENED_MENU_CLASS = 'main-header--opened';

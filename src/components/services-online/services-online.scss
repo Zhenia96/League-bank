@@ -1,0 +1,28 @@
+@import '../../css/variables.scss';
+
+.services-online {
+
+  @media (min-width: $desktopWidth) {
+    background-image: url('../../img/services/phone-desktop.jpg');
+  }
+
+  @media (max-width: $tabletWidth) {
+    background-image: url('../../img/services/phone-tablet.jpg');
+  }
+
+  @media (max-width: $mobileWidth) {
+    background-image: url('../../img/services/phone-mobile.jpg');
+  }
+}
+
+.services-online__slogan {
+  width: 81%;
+}
+
+.services-online__list-item {
+  width: 65%;
+
+  @media (max-width: $mobileWidth) {
+    width: 67%;
+  }
+}

@@ -1,6 +1,13 @@
+@import '../../../css/variables.scss';
+
 .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: rgba(32, 40, 182, 1);
+
+  @media (max-width: $mobileWidth) {
+    width: 6px;
+    height: 6px;
+  }
 }

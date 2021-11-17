@@ -4,3 +4,5 @@ $robotoFont: 'Roboto', 'Arial', sans-serif;
 $desktopWidth: 1024px;
 $tabletWidth: 1023px;
 $mobileWidth: 767px;
+
+$desktopWindowIndent: 0 clamp(20px, calc((100vw - 1024px) / 2), 98px);

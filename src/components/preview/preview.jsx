@@ -5,7 +5,6 @@ import PreviewItem from '../preview-item/preview-item';
 import previews from '../../mocks/preview';
 import getDeviceType from '../../store/application/selectors';
 import { DeviceType } from '../../constants';
-import './preview.scss';
 
 const Preview = () => {
   const deviceType = useSelector(getDeviceType);

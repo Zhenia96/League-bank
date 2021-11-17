@@ -1,0 +1,16 @@
+@import '../../../css/mixins.scss';
+@import '../../../css/variables.scss';
+
+.service-list {
+  @include resetList;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 14px;
+
+  @media (max-width: $mobileWidth) {
+    row-gap: 12px;
+  }
+}

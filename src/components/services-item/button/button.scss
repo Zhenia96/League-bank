@@ -1,0 +1,18 @@
+@import '../../../css/variables.scss';
+
+.service-button {
+   width: 198px;
+   min-height: 51px;
+   margin-top: 5px;
+
+  @media (max-width: $tabletWidth) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 100%;
+    min-height: 43px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}

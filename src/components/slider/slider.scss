@@ -15,10 +15,12 @@
 .slick-dots li {
   width: 8px;
   height: 8px;
+  margin: 0 4px;
 
   @media (max-width: $mobileWidth) {
     width: 6px;
     height: 6px;
+    margin: 0 3px;
   }
 }
 

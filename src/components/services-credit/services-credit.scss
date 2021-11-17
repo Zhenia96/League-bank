@@ -1,0 +1,21 @@
+@import '../../css/variables.scss';
+
+.services-credit {
+
+  @media (min-width: $desktopWidth) {
+    background-image: url('../../img/services/car-desktop.jpg');
+  }
+
+  @media (max-width: $tabletWidth) {
+    background-image: url('../../img/services/car-tablet.jpg');
+  }
+
+  @media (max-width: $mobileWidth) {
+    background-image: url('../../img/services/car-mobile.jpg');
+  }
+}
+
+.services-credit__link {
+  color: inherit;
+  font-weight: 500;
+}

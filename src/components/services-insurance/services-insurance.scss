@@ -1,0 +1,16 @@
+@import '../../css/variables.scss';
+
+.services-insurance {
+
+  @media (min-width: $desktopWidth) {
+    background-image: url('../../img/services/lock-desktop.jpg');
+  }
+
+  @media (max-width: $tabletWidth) {
+    background-image: url('../../img/services/lock-tablet.jpg');
+  }
+
+  @media (max-width: $mobileWidth) {
+    background-image: url('../../img/services/lock-mobile.jpg');
+  }
+}

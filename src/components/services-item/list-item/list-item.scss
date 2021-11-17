@@ -1,0 +1,40 @@
+@import '../../../css/variables.scss';
+
+.service-list-item {
+  position: relative;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: rgba(31, 30, 37, 1);
+
+  padding-left: 21px;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: '';
+    width: 11px;
+    height: 8px;
+
+    background-repeat: no-repeat;
+    background-size: 11px 8px;
+    background-image: url('../../../img/icons/tick.svg');
+  }
+
+  @media (max-width: $tabletWidth) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    font-size: 14px;
+    padding-left: 15px;
+
+    &::before {
+      background-size: 8px 6px;
+      width: 8px;
+      height: 6px;
+    }
+  }
+}

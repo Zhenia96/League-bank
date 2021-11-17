@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logoIcon from '../../img/incons/logo.svg';
+import logoIcon from '../../img/icons/logo.svg';
 import './logo.scss';
 
 const Logo = ({ className }) => (
