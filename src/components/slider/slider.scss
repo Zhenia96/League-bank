@@ -1,5 +1,9 @@
 @import '../../css/variables.scss';
 
+.slick-slider {
+  overflow-x: hidden;
+}
+
 .slick-dots {
   bottom: 35px;
 
