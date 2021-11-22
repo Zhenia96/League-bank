@@ -1,0 +1,145 @@
+@import '../../css/variables.scss';
+
+.location {
+  margin: 98px 0 110px;
+
+  @media (max-width: $tabletWidth) {
+    margin: 67px 0 80px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin: 53px 0 60px;
+  }
+}
+
+.location__title {
+  font-family: $robotoFont;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 140%;
+  color: rgba(31, 30, 37, 1);
+
+  margin: $desktopWindowIndent;
+
+  @media (max-width: $tabletWidth) {
+    font-size: 32px;
+    margin: 0 45px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    font-size: 22px;
+    margin: 0 15px;
+  }
+}
+
+.location__map-container {
+  position: relative;
+  height: 462px;
+  margin: $desktopWindowIndent;
+  margin-top: 55px;
+
+  @media (max-width: $tabletWidth) {
+    margin: 0 45px;
+    margin-top: 34px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    margin: 0;
+    margin-top: 25px;
+    height: 381px;
+  }
+}
+
+.location__map-controls {
+  position: absolute;
+  top: 44.5%;
+  right: 11px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  z-index: 1000;
+
+
+  @media (max-width: $tabletWidth) {
+    top: 51.5%;
+    right: 6px;
+  }
+}
+
+.location__map-zoom-controls-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  width: 30px;
+  height: 65px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50% / 17px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: rgba(246, 246, 246, 1);
+  }
+
+  @media (max-width: $tabletWidth) {
+    width: 27px;
+    height: 53px;
+    border-radius: 50% / 15px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 21px;
+    height: 45px;
+    border-radius: 50% / 10px;
+  }
+}
+
+.location__map-control  {
+  padding: 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+
+  &--location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+
+  @media (max-width: $tabletWidth) {
+    width: 27px;
+    height: 27px;
+  }
+
+  @media (max-width: $mobileWidth) {
+    width: 21px;
+    height: 21px;
+  }
+  }
+
+  &--zoom {
+    flex-grow: 1;
+  }
+}
+
+.location__control-icon {
+  display: block;
+
+  @media (max-width: $tabletWidth) {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.location__map {
+  height: 100%;
+}
