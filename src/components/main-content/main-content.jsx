@@ -6,6 +6,7 @@ import Location from '../location/location';
 function MainContent() {
   return (
     <main>
+      <h1 className='visually-hidden'>Главная страница</h1>
       <Preview />
       <Services />
       <Location />
