@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../logo/logo';
 import InstagramIcon from '../../img/icons/insta.svg';
 import FacebookIcon from '../../img/icons/fb.svg';
 import TwitterIcon from '../../img/icons/twitter.svg';
 import YoutubeIcon from '../../img/icons/youtube.svg';
+import { Path } from '../../constants';
 import './main-footer.scss';
 
 export default function MainFooter() {
@@ -30,9 +32,9 @@ export default function MainFooter() {
               </a>
             </li>
             <li className='main-footer__navigation-item'>
-              <a className='link main-footer__navigation-link' href='/'>
+              <Link className='link main-footer__navigation-link' to={Path.MAIN}>
                 Рассчитать кредит
-              </a>
+              </Link>
             </li>
             <li className='main-footer__navigation-item'>
               <a className='link main-footer__navigation-link' href='/'>

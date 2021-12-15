@@ -17,9 +17,15 @@ const ActionType = {
   CHANGE_DEVICE_TYPE: 'change device type',
 };
 
+const Path = {
+  MAIN: '/',
+  CONVERTER: '/converter',
+};
+
 export {
   DeviceType,
   MaxDiveceSize,
   NameSpace,
   ActionType,
+  Path,
 };

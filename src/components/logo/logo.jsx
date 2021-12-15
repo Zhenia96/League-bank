@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import logoIcon from '../../img/icons/logo.svg';
+import { Path } from '../../constants';
 import './logo.scss';
 
 const Logo = ({ className }) => (
-  <a className={`${className ?? ''} logo`} href='/'>
+  <Link className={`${className ?? ''} logo`} to={Path.MAIN}>
     <img className='logo__icon' src={logoIcon} alt='Логотип Лига Банка' />
     ЛИГА Банк
-  </a>
+  </Link>
 );
 
 Logo.propTypes = {

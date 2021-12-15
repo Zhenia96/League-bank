@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../logo/logo';
 import loginIcon from '../../img/icons/login.svg';
+import { Path } from '../../constants';
 import './main-header.scss';
 
 const OPENED_MENU_CLASS = 'main-header--opened';
@@ -22,8 +24,8 @@ const MainHeader = () => {
         <Logo className='main-header__logo' />
         <ul className='main-header__main-menu'>
           <li className='main-header__main-menu-item'><a className='main-header__main-menu-link link' href='/#'>Услуги</a></li>
-          <li className='main-header__main-menu-item'><a className='main-header__main-menu-link link' href='/#'>Рассчитать кредит</a></li>
-          <li className='main-header__main-menu-item'><a className='main-header__main-menu-link link' href='/#'>Конвертер валют</a></li>
+          <li className='main-header__main-menu-item'><Link className='main-header__main-menu-link link' to={Path.MAIN}>Рассчитать кредит</Link></li>
+          <li className='main-header__main-menu-item'><Link className='main-header__main-menu-link link' to={Path.CONVERTER}>Конвертер валют</Link></li>
           <li className='main-header__main-menu-item'><a className='main-header__main-menu-link link' href='/#'>Контакты</a></li>
         </ul>
         <ul className='main-header__user-menu'>
