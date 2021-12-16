@@ -1,0 +1,24 @@
+@import '../../css/variables.scss';
+
+.date-field {
+  margin: 0;
+}
+
+.date-field__date-picker {
+  border: 1px solid $basic-black-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  width: 390px;
+  height: 60px;
+
+  font-family: $basic-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+
+  padding-top: 2px;
+}

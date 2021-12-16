@@ -7,13 +7,13 @@
   justify-content: flex-start;
   row-gap: 28px;
 
-  font-family: $robotoFont;
+  font-family: $basic-font;
 
   min-height: 410px;
   padding: 54px 50% 20px 70px;
   box-sizing: border-box;
 
-  background-color: rgba(246, 247, 255, 1);
+  background-color: $gray-background-color;
   background-repeat: no-repeat;
   background-position: right 18.5% center;
 

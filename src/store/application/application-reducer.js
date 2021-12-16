@@ -1,6 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit';
 import getDeviceType from '../../common/common';
-import changeDeviceType from '../action';
+import { changeDeviceType } from '../action';
 
 const initialState = {
   deviceType: getDeviceType(),

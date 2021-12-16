@@ -7,7 +7,7 @@ import App from './components/app/app';
 import getDeviceType from './common/common';
 import rootReducer from './store/root-reducer';
 import { NameSpace } from './constants';
-import changeDeviceType from './store/action';
+import { changeDeviceType } from './store/action';
 import 'normalize.css';
 import './css/index.scss';
 

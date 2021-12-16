@@ -7,7 +7,7 @@
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.02em;
-  color: rgba(31, 30, 37, 1);
+  color: $basic-black-color;
 
   @media (max-width: $tabletWidth) {
     font-size: 18px;

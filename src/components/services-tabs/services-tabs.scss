@@ -6,11 +6,11 @@
 }
 
 .tabs__link-list {
-  @include resetList;
+  @include reset-list;
 
   display: flex;
   justify-content: stretch;
-  font-family: $robotoFont;
+  font-family: $basic-font;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -36,8 +36,8 @@
   border-radius: 4px 4px 0px 0px;
 
   &--active {
-    background-color:rgba(246, 247, 255, 1);
-    color: rgba(31, 30, 37, 1);
+    background-color:$gray-background-color;
+    color: $basic-black-color
   }
 }
 

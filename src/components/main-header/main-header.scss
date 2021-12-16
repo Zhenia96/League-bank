@@ -4,7 +4,7 @@
 .main-header {
   position: relative;
   min-height: 91px;
-  background-color: rgba(246, 247, 255, 1);
+  background-color: $gray-background-color;
   padding: 27px 0 10px;
   box-sizing: border-box;
 
@@ -47,7 +47,7 @@
 }
 
 .main-header__main-menu {
-  @include resetList;
+  @include reset-list;
 
   display: flex;
   flex-wrap: wrap;
@@ -75,11 +75,11 @@
 }
 
 .main-header__main-menu-item {
-  font-family: $robotoFont;
+  font-family: $basic-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: rgba(31, 30, 37, 1);
+  color: $basic-black-color;
 
   @media (max-width: $tabletWidth) {
     font-size: 14px;
@@ -108,7 +108,7 @@
 }
 
 .main-header__user-menu {
-  @include resetList;
+  @include reset-list;
 
   margin-left:  auto;
 
@@ -124,7 +124,7 @@
 
 .main-header__user-login {
   position: relative;
-  font-family: $robotoFont;
+  font-family: $basic-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -175,8 +175,8 @@
   width: 16px;
   height: 12px;
   border: none;
-  border-top: 2px solid rgba(31, 30, 37, 1);
-  border-bottom: 2px solid rgba(31, 30, 37, 1);
+  border-top: 2px solid $basic-black-color;
+  border-bottom: 2px solid $basic-black-color;
   background-color: rgba(255, 255, 255, 1);
 
   &::after {
@@ -186,7 +186,7 @@
     content: '';
     width: 16px;
     height: 2px;
-    background-color: rgba(31, 30, 37, 1);
+    background-color: $basic-black-color;
   }
 
   @media (max-width: $mobileWidth) {
@@ -212,7 +212,7 @@
      width: 2px;
      height: 17px;
      border-radius: 1px;
-     background-color: rgba(31, 30, 37, 1);
+     background-color: $basic-black-color;
   }
 
   &::after {

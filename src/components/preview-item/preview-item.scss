@@ -56,14 +56,12 @@
   }
 }
 
-
-
 .preview-item__lead {
-  font-family: $robotoFont;
+  font-family: $basic-font;
   font-weight: 700;
   font-size: 54px;
   line-height: 63px;
-  color: rgba(31, 30, 37, 1);
+  color: $basic-black-color;
 
   margin: 0;
 
@@ -78,12 +76,12 @@
   }
 
   &--credit {
-    color: rgba(246, 247, 255, 1);
+    color: $gray-background-color;
   }
 }
 
 .preview-item__slogan {
-  font-family: $robotoFont;
+  font-family: $basic-font;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -117,7 +115,7 @@
 }
 
 .preview-item__button {
-  font-family: $robotoFont;
+  font-family: $basic-font;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
@@ -145,8 +143,8 @@
   }
 
   &--credit {
-    color: rgba(31, 30, 37, 1);
-    background-color: rgba(246, 247, 255, 1);
+    color: $basic-black-color;
+    background-color: $gray-background-color;
     width: 234px;
 
     @media (max-width: $tabletWidth) {

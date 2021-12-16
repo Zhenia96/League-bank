@@ -5,4 +5,14 @@ const changeDeviceType = createAction(ActionType.CHANGE_DEVICE_TYPE, (deviceType
   payload: deviceType,
 }));
 
-export default changeDeviceType;
+const clearHistory = createAction(ActionType.CLEAR_HISTORY);
+
+const addHistory = createAction(ActionType.ADD_HISTORY, (historyItem) => ({
+  payload: historyItem,
+}));
+
+export {
+  changeDeviceType,
+  clearHistory,
+  addHistory,
+};

@@ -13,11 +13,11 @@
 }
 
 .location__title {
-  font-family: $robotoFont;
+  font-family: $basic-font;
   font-weight: 700;
   font-size: 41px;
   line-height: 140%;
-  color: rgba(31, 30, 37, 1);
+  color: $basic-black-color;
 
   margin: $desktopWindowIndent;
 

@@ -2,7 +2,7 @@
 @import '../../../css/variables.scss';
 
 .service-list {
-  @include resetList;
+  @include reset-list;
 
   display: flex;
   flex-direction: column;
